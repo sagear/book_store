@@ -1,0 +1,17 @@
+<h1>Listing Users</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th></th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.email %></td>
+      
+    </tr>
+  <% end %>
+  
+</table>
+<%= link_to 'Back', root_path%>
